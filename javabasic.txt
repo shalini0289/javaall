@@ -19,3 +19,7 @@ serialized, its state is converted into a stream of bytes that can be stored or 
 over a network. By marking a variable as transient, you are telling the Java runtime system 
 to exclude that variable from the serialization process. When the object is later 
 deserialized, the transient variable will be initialized to its default value.
+
+The volatile keyword is used to indicate that a variable's value may be modified by multiple threads simultaneously. When a variable is marked as volatile, the Java runtime system ensures that all reads and writes to that variable are done atomically, meaning that they cannot be interrupted by other threads. This helps to prevent race conditions and ensure that all threads see the latest value of the variable.
+
+Here's an example of how to use the volatile keyword in Java:
